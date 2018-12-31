@@ -6,6 +6,8 @@ jobs:
       - image: circleci/ruby:2.4.1-node
         environment:
           RAILS_ENV: test
+          PGHOST: 127.0.0.1
+          PGUSER: root
       - image: circleci/postgres:9.4.12-alpine
         environment:
           POSTGRES_USER: root
@@ -22,7 +24,8 @@ jobs:
       - run: bundle install --path vendor/bundle
       # install postgresql
       - run: sudo apt install -y postgresql-client || true
-      - run: bundle exec rake db:create db:schema:load # setup database
+      # setup database
+      - run: bundle exec rake db:create db:migrate
       - run:
           name: Run tests
           command: rake
