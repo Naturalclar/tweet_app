@@ -9,11 +9,11 @@ header {
 .header-logo {
   float: left;
   padding-left: 20px;
-  color: white;
+  color: $white;
   font-size: 22px;
   line-height: 64px;
   & a {
-    color: white;
+    color: $white;
     font-size: 22px;
   }
 }
@@ -24,15 +24,15 @@ header {
   & li {
     float: left;
     line-height: 64px;
-    font-size: 13px;
-    color: white;
+    font-size: $font-text;
+    color: $white;
     padding-left: 15px;
   }
 
   & a {
     float: left;
-    font-size: 13px;
-    color: white;
+    font-size: $font-text;
+    color: $white;
   }
 
   & .fa {
@@ -43,8 +43,8 @@ header {
     padding: 0 20px;
     float: left;
     line-height: 64px;
-    color: white;
+    color: $white;
     margin: 0;
-    font-size: 13px;
+    font-size: $font-text;
   }
 }

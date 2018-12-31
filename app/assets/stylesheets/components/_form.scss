@@ -1,8 +1,8 @@
 .form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: white;
-  box-shadow: 0 2px 6px #c1ced7;
+  background-color: $white;
+  box-shadow: 0 2px 6px $lighter-gray;
 
   & input {
     width: 100%;
@@ -15,8 +15,8 @@
   }
 
   & input[type="submit"] {
-    background-color: #3ecdc6;
-    color: white;
+    background-color: $color-primary;
+    color: $white;
     cursor: pointer;
     font-weight: 300;
     width: 120px;
@@ -51,5 +51,5 @@
 }
 
 .form-error {
-  color: #ff4d75;
+  color: $color-error;
 }
