@@ -9,4 +9,8 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     get "/posts/new"
     assert_response :success
   end
+  test "should be able to post" do
+    post "/posts/create", { params: { content:"foo" }}
+    assert_response :redirect
+  end
 end
