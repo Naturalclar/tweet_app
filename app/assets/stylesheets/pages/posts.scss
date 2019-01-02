@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .posts-index-item {
   padding: 20px 30px;
-  background-color: white;
+  background-color: $white;
   overflow: hidden;
   box-shadow: 0 2px 6px $lighter-gray;
 }
@@ -30,10 +30,9 @@
 .post-user-name {
   & a {
     font-weight: 600;
-  }
-
-  & a:hover {
-    color: #3ecdc6;
+    &:hover {
+      color: #3ecdc6;
+    }
   }
 }
 
@@ -90,7 +89,7 @@
 }
 
 /* posts/new */
-.posts-new {
+.posts-form {
   & textarea {
     font-size: 20px;
     padding: 10px;
