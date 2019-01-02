@@ -1,6 +1,6 @@
 <div class="main posts-form">
   <div class="container">
-    <h1 class="form-heading">投稿する</h1>
+    <h1 class="form-heading">Send</h1>
     <div class="form">
       <div class="form-body">
         <% @post.errors.full_messages.each do |message| %>
@@ -10,7 +10,7 @@
         <% end %>
         <%= form_tag("/posts/create") do %>
         <textarea name="content"><%= @post.content %></textarea>
-        <input type="submit" value="投稿">
+        <input type="submit" value="Send">
         <% end %>
       </div>
     </div>

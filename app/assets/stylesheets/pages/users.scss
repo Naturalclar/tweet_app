@@ -37,7 +37,7 @@
   & a {
     font-weight: 600;
     &:hover {
-      color: #3ecdc6;
+      color: $color-primary;
     }
   }
 }
@@ -80,7 +80,7 @@
   }
 
   & a {
-    color: #8899a6;
+    color: $light-gray;
     text-decoration: underline;
     font-weight: 200;
   }
@@ -103,7 +103,7 @@
   & li {
     float: left;
     &.active {
-      border-bottom: 2px solid #3ecdc6;
+      border-bottom: 2px solid $color-primary;
       & a {
         color: #57575f;
       }
