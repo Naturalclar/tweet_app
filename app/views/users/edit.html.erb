@@ -1,6 +1,6 @@
-<div class="main users-new">
+<div class="main users-edit">
   <div class="container">
-    <div class="form-heading">New User</div>
+    <div class="form-heading">User Settings</div>
     <div class="form users-form">
       <div class="form-body">
         <% @user.errors.full_messages.each do |message| %>
@@ -8,12 +8,13 @@
             <%= message %>
           </div>
         <% end %>
-        <%= form_tag('/users/create') do %>
+        
+        <%= form_tag("/users/#{@user.id}/update") do %>
           <p>Username</p>
           <input name="name" value="<%= @user.name %>">
           <p>Email</p>
-          <input name="email" type="email" value="<%= @user.email %>">      
-          <input type="submit" value="Sign Up">
+          <input name="email" type="email" value="<%= @user.email %>">
+          <input type="submit" value="Save">
         <% end %>
       </div>
     </div>
