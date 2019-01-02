@@ -1,0 +1,14 @@
+<div class="main users-index">
+  <div class="container">
+    <h1 class="users-heading">User List</h1>
+    <% @users.each do |user| %>
+      <%= link_to "/users/#{user.id}/edit", :action => 'go' do %>
+        <div class="users-index-item">
+          <div class="user-right">
+            <%= user.name %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

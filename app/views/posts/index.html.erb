@@ -2,9 +2,9 @@
   <div class="container">
     <% @posts.each do |post| %>
       <%= link_to "/posts/#{post.id}", :action => 'go' do %>
-      <div class="posts-index-item">
-        <%= post.content %>
-      </div>
+        <div class="posts-index-item">
+          <%= post.content %>
+        </div>
       <% end %>
     <% end %>
   </div>
