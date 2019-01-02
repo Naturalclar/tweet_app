@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # users
   get 'users/index'
+  get 'users/:id' => 'users#show'
   # posts
   get 'posts/index'
   get 'posts/new'
