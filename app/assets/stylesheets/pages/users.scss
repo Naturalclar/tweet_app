@@ -16,6 +16,9 @@
   box-shadow: 0 2px 6px $lighter-gray;
   display: table;
   width: 100%;
+  &:hover {
+    background-color: darken($white, 10%);
+  }
 }
 
 .user-left {

@@ -6,6 +6,9 @@
   background-color: $white;
   overflow: hidden;
   box-shadow: 0 2px 6px $lighter-gray;
+  &:hover {
+    background-color: darken($white, 10%);
+  }
 }
 
 .post-left {
