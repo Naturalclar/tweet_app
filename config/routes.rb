@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'users/index'
   get 'signup' => 'users#new'
   get 'users/:id' => 'users#show'
+  post 'users/create'
   # posts
   get 'posts/index'
   get 'posts/new'

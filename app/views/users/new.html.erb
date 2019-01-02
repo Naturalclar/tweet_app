@@ -3,11 +3,18 @@
     <div class="form-heading">New User</div>
     <div class="form users-form">
       <div class="form-body">
-        <p>Username</p>
-        <input name="name">
-        <p>Email</p>
-        <input name="email" type="email">      
-        <input type="submit" value="Sign Up">
+        <% @user.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+        <% end %>
+        <%= form_tag('/users/create') do %>
+          <p>Username</p>
+          <input name="name">
+          <p>Email</p>
+          <input name="email" type="email">      
+          <input type="submit" value="Sign Up">
+        <% end %>
       </div>
     </div>
   </div>

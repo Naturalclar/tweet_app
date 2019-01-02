@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(content: params[:content])
     if @post.save
-      flash[:notice] = "投稿を作成しました"
+      flash[:notice] = "Tweet Sent!"
       redirect_to('/posts/index')
     else
       render("posts/new")
@@ -20,14 +20,14 @@ class PostsController < ApplicationController
   def delete
     @post = Post.find_by(id: params[:id])
     @post.destroy
-    flash[:notice] = "投稿を削除しました"
+    flash[:notice] = "Tweet Deleted"
     redirect_to('/posts/index')
   end
   def update
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
-      flash[:notice] = "投稿を編集しました"
+      flash[:notice] = "Tweet Edited"
       redirect_to('/posts/index')
     else
       render("posts/edit")

@@ -3,9 +3,18 @@ class UsersController < ApplicationController
     @users = User.all
   end
   def show
-    @user = User.find_by(params[:id])
+    @user = User.find_by(id:params[:id])
   end
   def new
     @user = User.new
+  end
+  def create
+    @user = User.new(name:params[:name],email:params[:email])
+    if @user.save
+      flash[:notice] = "New user created"
+      redirect_to('/posts/index')
+    else
+      render("users/new")
+    end
   end
 end
