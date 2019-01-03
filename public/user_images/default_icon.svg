@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Sprite</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Sprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#3ECDC6" x="0" y="0" width="50" height="50"></rect>
+        <circle id="Oval" stroke="#979797" fill="#FFFFFF" fill-rule="nonzero" cx="25" cy="19" r="8"></circle>
+        <path d="M37,40 C37,33.372583 31.627417,28 25,28 C18.372583,28 13,33.372583 13,40" id="Path" stroke="#979797" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

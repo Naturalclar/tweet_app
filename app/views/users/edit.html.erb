@@ -9,11 +9,13 @@
           </div>
         <% end %>
         
-        <%= form_tag("/users/#{@user.id}/update") do %>
+        <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
           <p>Username</p>
           <input name="name" value="<%= @user.name %>">
           <p>Email</p>
           <input name="email" type="email" value="<%= @user.email %>">
+          <p>Profile Image</p>
+          <input name="image" type="file">
           <input type="submit" value="Save">
         <% end %>
       </div>
